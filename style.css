@@ -1,15 +1,19 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css); /*lấy từ đường link từ font awesome cdn*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+
+/*lấy từ đường link từ font awesome cdn*/
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: black;
+  background: whitesmoke;
   color: white;
 }
+
 #container {
   margin: 0;
   padding: 0;
 }
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -17,7 +21,8 @@ body {
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative; /*lớp cha*/
+  position: relative;
+  /*lớp cha*/
 }
 
 .banner .content {
@@ -29,6 +34,7 @@ body {
   width: 500px;
   transition: 1s;
 }
+
 /*Logo*/
 .nav {
   position: absolute;
@@ -37,32 +43,38 @@ body {
   width: 100%;
   z-index: 11111111111111;
 }
+
 .logo {
   position: absolute;
   left: 15%;
   top: 40px;
 }
+
 .logo img {
   width: 50px;
 }
+
 .menu {
   position: absolute;
   top: 0;
   width: 70%;
   padding: 15vh 15% 0 15%;
   min-height: 50vh;
-  background: rgb(
-    18,
-    20,
-    45,
-    0.5
-  ); /* Điều chỉnh màu cho menu và độ mờ của menu */
-  transform: translate(0, -90%); /* lui lên 90% */
-  border-bottom-right-radius: 50%; /* cong bên phải lên 50% */
-  border-bottom-left-radius: 50%; /* cong bên trái lên 50% */
+  background: rgb(18,
+      20,
+      45,
+      0.5);
+  /* Điều chỉnh màu cho menu và độ mờ của menu */
+  transform: translate(0, -90%);
+  /* lui lên 90% */
+  border-bottom-right-radius: 50%;
+  /* cong bên phải lên 50% */
+  border-bottom-left-radius: 50%;
+  /* cong bên trái lên 50% */
   transition: 1s;
   text-align: center;
 }
+
 #direction {
   position: absolute;
   bottom: 30px;
@@ -71,37 +83,46 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
+
 #direction i:nth-child(2) {
   display: none;
 }
+
 .activeMenu #direction i:nth-child(2) {
   display: block;
 }
+
 .activeMenu #direction i:nth-child(1) {
   display: none;
 }
+
 /*chuyển động lên xuống của thanh menu*/
 .activeMenu .menu {
   transform: translate(0, 0);
   background: rgb(18, 20, 45);
 }
+
 /* chuyển động của the coffee house*/
 .activeMenu .banner .content {
   top: 70%;
 }
+
 /* chuyển động của hình background-zise từ 100% lên 150%*/
 .activeMenu .banner {
   background-size: 150% auto;
 }
+
 .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .list {
   width: 60%;
   float: left;
 }
+
 .nav .list ul {
   width: 50%;
   float: left;
@@ -109,6 +130,7 @@ body {
   text-align: left;
   margin-bottom: 30px;
 }
+
 .nav .list .HiTea {
   margin-top: -100px;
 }
@@ -117,6 +139,7 @@ nav.list ul li {
   padding: 10px 30px 10px 30;
   opacity: 0.7;
 }
+
 .nav.list ul li:nth-child(1) {
   font-weight: bold;
 }
@@ -142,36 +165,98 @@ nav.list ul li {
   font-size: 10px;
   font-weight: 500;
 }
+
 .menu li {
   opacity: 0;
 }
+
 .activeMenu li {
   opacity: 0;
   animation: effectmenu 1s ease-in-out 1 forwards;
 }
+
 @keyframes effectmenu {
   from {
     opacity: 0;
     transform: translate(0, -50px);
   }
+
   to {
     opacity: 1;
     transform: translate(0, 0);
   }
 }
+
 .activeMenu li:nth-last-child(2) {
   animation-delay: 0.2s !important;
 }
+
 .activeMenu li:nth-last-child(3) {
   animation-delay: 0.4s !important;
 }
+
 .activeMenu li:nth-last-child(4) {
   animation-delay: 0.6s !important;
 }
+
 .activeMenu li:nth-last-child(5) {
   animation-delay: 0.8s !important;
 }
 
 a:link {
   text-decoration: none;
+}
+
+/* container-2 */
+* {
+  box-sizing: border-box;
+}
+
+#left-img {
+  float: left;
+  width: 558px;
+}
+
+.container-2 {
+  background-image: url(./background.webp);
+  background-repeat: no-repeat;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.detail {
+  float: left;
+  width: 548px;
+  color: black;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+#btn-demo {
+  padding: 20px;
+  font-size: 18px;
+  color: lightslategrey;
+  border-radius: 15px;
+  border: none;
+}
+
+#btn-demo:hover {
+  border: 1px solid gray;
+  font-size: 20px;
+  color: black;
+  animation: buttonhover 0.5s ease-in-out;
+}
+
+@keyframes buttonhover {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
