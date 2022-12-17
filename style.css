@@ -211,20 +211,25 @@ a:link {
 
 #left-img {
   float: left;
-  width: 558px;
+  /* width: 558px; */
+  width: 50%;
 }
 
 .container-2 {
   background-image: url(./background.webp);
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 100%;
   margin: 20px auto;
 }
 
 .detail {
   float: left;
-  width: 548px;
+  /* width: 548px; */
+  width: 50%;
   color: black;
+}
+.detail img {
+  width: 50%;
 }
 
 .clearfix::after {
@@ -256,4 +261,30 @@ a:link {
   to {
     transform: rotateZ(360deg);
   }
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  font-size: 0.7rem;
+}
+footer a {
+  color: white;
+}
+.container-footer {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* article */
+article {
+  color: black;
+  width: 95%;
+  margin: 5px auto;
+}
+
+article img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
 }
