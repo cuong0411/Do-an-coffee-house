@@ -58,8 +58,8 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 5px 15% 0 15%;
-  min-height: 50%vh;
+  padding: 25vh 15% 0 15%;
+  min-height: 60%vh;
   background: rgb(18, 20, 45, 0.5);
   /* Điều chỉnh màu cho menu và độ mờ của menu */
   transform: translate(0, -90%);
@@ -283,8 +283,10 @@ article {
   width: 95%;
   margin: 5px auto;
 }
-
+article img {
+  border-radius: 15px;
+}
 article img:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all 0.4s;
 }
