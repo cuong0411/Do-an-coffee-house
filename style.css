@@ -57,13 +57,10 @@ body {
 .menu {
   position: absolute;
   top: 0;
-  width: 70%;
-  padding: 15vh 15% 0 15%;
-  min-height: 50vh;
-  background: rgb(18,
-      20,
-      45,
-      0.5);
+  width: 100%;
+  padding: 5px 15% 0 15%;
+  min-height: 50%vh;
+  background: rgb(18, 20, 45, 0.5);
   /* Điều chỉnh màu cho menu và độ mờ của menu */
   transform: translate(0, -90%);
   /* lui lên 90% */
@@ -231,7 +228,7 @@ a:link {
 }
 
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
 }
