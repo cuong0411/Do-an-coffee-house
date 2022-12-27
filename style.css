@@ -58,11 +58,11 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 25vh 15% 0 15%;
+  padding: 25px 15% 0 15%;
   min-height: 60%vh;
   background: rgb(18, 20, 45, 0.5);
   /* Điều chỉnh màu cho menu và độ mờ của menu */
-  transform: translate(0, -90%);
+  transform: translate(0, -80%);
   /* lui lên 90% */
   border-bottom-right-radius: 50%;
   /* cong bên phải lên 50% */
